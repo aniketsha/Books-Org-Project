@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Cart</title>
+    <link rel="stylesheet" type="text/css" href="/css/viewcart.css">
+</head>
+<body>
+	<h1>Shopping Cart</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Iterate over items in the cart -->
+            <tr th:each="book : ${cart}">
+                <td th:text="${book.bookName}"></td>
+                <td th:text="${book.description}"></td>
+                <td th:text="${book.price}"></td>
+                <td th:text="${book.quantity}"></td> 
+                <td th:text="${book.price * book.quantity}"></td>
+                <td>
+                    <form th:action="@{/secure/orderconfirmation}" method="post">
+                        <input type="hidden" name="bookId" th:value="${book.id}" />
+                        <input type="submit" value="Place Order" />
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Login and Register buttons -->
+    <div style="text-align: center;">
+        <a th:href="@{/login}">Login</a>
+        <a th:href="@{/register}">Register</a>
+    </div>
+</body>
+</html>

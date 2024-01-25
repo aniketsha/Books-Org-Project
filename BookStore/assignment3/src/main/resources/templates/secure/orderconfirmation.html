@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="/css/orderconfirmation.css">
+</head>
+<body>
+    <h2>Your order has been placed successfully!</h2>
+    <p>Thank you for shopping with us. Your order details are as follows:</p>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Display order details -->
+            <tr th:each="book : ${orderDetails}">
+                <td th:text="${book.bookName}"></td>
+                <td th:text="${book.description}"></td>
+                <td th:text="${book.price}"></td>
+                <td th:text="${book.quantity}"></td> 
+                <td th:text="${book.price * book.quantity}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Link to go back to the home page or browse page -->
+    <div style="text-align: center;">
+        <a th:href="@{/books}">Browse More Books</a>
+    </div>
+</body>
+</html>

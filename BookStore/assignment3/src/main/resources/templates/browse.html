@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Browse Books</title>
+    <link rel="stylesheet" type="text/css" href="/css/browse.css">
+</head>
+<body>
+    <h2>Insert New Book</h2>
+    <form method="post" action="#" th:action="@{/secure/insertBook}" th:object="${book}">
+        <input type="hidden" name="id" th:field="*{id}"/>
+        Book Name: <input type="text" name="bookName" th:field="*{bookName}" /><br>
+        ISBN: <input type="text" name="ISBN" th:field="*{ISBN}" /><br>
+        Price: <input type="text" name="price" th:field="*{price}" /><br>
+        Description: <input type="text" name="description" th:field="*{description}" /><br>
+        <input type="submit" value="Add book!" />
+    </form>
+    <h2>Browse Books</h2>
+    <table th:if="${bookList != null AND bookList != ''}">
+        <tr th:each="book : ${bookList}">
+            <td th:text="${book.id}">123</td>
+            <td th:text="${book.bookName}">Frank</td>
+            <td th:text="${book.ISBN}">abc</td>
+            <td th:text="${book.price}">100</td>
+            <td th:text="${book.description}">Description</td>
+            <td><a th:href="@{/editBook/}+${book.id}">Edit</a></td>
+            <td><a th:href="@{/deleteBook/}+${book.id}">Delete</a></td>
+        </tr>
+    </table>
+    <br><hr><br>
+    <a href="/">Home Page</a>
+</body>
+</html>

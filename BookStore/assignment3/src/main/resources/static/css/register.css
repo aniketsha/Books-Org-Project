@@ -1,0 +1,46 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0; /* Set your desired background color */
+    color: #333; /* Set your desired text color */
+    text-align: center;
+    margin: 50px;
+}
+
+h1 {
+    color: #007bff; /* Set your desired heading color */
+}
+
+form {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Set your desired form background color */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Set your desired submit button background color */
+    color: #fff; /* Set your desired submit button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Set your desired hover color for the submit button */
+}
+
+.error {
+    color: red; /* Set your desired error message color */
+    margin-bottom: 10px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert New Book</title>
+    <link rel="stylesheet" type="text/css" href="/css/insert.css">
+</head>
+<body>
+    <h2>Edit the book</h2>
+    <form method="post" action="#" th:action="@{/secure/insertBook}" th:object="${book}">
+        <input type="hidden" name="id" th:field="*{id}"/>
+        Book Name: <input type="text" name="bookName" th:field="*{bookName}" /><br>
+        ISBN: <input type="text" name="ISBN" th:field="*{ISBN}" /><br>
+        Price: <input type="text" name="price" th:field="*{price}" /><br>
+        Description: <input type="text" name="description" th:field="*{description}" /><br>
+        <input type="submit" value="Add book!" />
+    </form>
+    <a href="/books">Browse Books</a>
+    <a href="/">Home Page</a>
+</body>
+</html>
