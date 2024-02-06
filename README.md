@@ -11,3 +11,4 @@ The technological stack encompassed Java Spring Boot, Thymeleaf, Lombok, and H2.
 
 In summation, the project epitomizes the fusion of cutting-edge technologies, implementing industry best practices in software architecture to deliver a comprehensive web application. This platform adeptly manages book-related functionalities, providing a seamlessly integrated shopping cart for an enhanced user experience.
 Result:
+
