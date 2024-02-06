@@ -17,3 +17,8 @@ This is the `BookController` class which serves as a central component in the we
 ![image](https://github.com/aniketsha/Books-Org-Project/assets/90695737/aedb148b-fb35-4a87-be68-ade5928a7cea)
 This is the screen shot of security config file which is responsible for configuring the security settings of the web application using Spring Security. It defines access controls for various endpoints, integrating role-based authentication and permitting public access to specific resources. Notably, it handles CSRF protection, custom login pages, exception handling, and logout functionality. The class also establishes a BCryptPasswordEncoder bean for secure password encoding during user authentication, contributing to a robust and secure web environment.
 
+![image](https://github.com/aniketsha/Books-Org-Project/assets/90695737/2505d40f-12e1-490b-9c7b-734f014f3bf1)
+![image](https://github.com/aniketsha/Books-Org-Project/assets/90695737/e398e9de-fa4c-42d9-a5d6-e80d03f0c888)
+![image](https://github.com/aniketsha/Books-Org-Project/assets/90695737/39db687c-6b9e-485a-8a26-f695c7699a9e)
+
+
