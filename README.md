@@ -12,3 +12,4 @@ The technological stack encompassed Java Spring Boot, Thymeleaf, Lombok, and H2.
 In summation, the project epitomizes the fusion of cutting-edge technologies, implementing industry best practices in software architecture to deliver a comprehensive web application. This platform adeptly manages book-related functionalities, providing a seamlessly integrated shopping cart for an enhanced user experience.
 Result:
 
+![Controller](https://github.com/aniketsha/Books-Org-Project/assets/90695737/f7de2172-219d-439f-b5a7-4777add7e3a1)
