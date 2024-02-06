@@ -10,14 +10,19 @@ Technological Stack:
 The technological stack encompassed Java Spring Boot, Thymeleaf, Lombok, and H2. These interwoven dependencies synergistically formed the backbone of the application, ensuring a robust and feature-rich foundation.
 
 In summation, the project epitomizes the fusion of cutting-edge technologies, implementing industry best practices in software architecture to deliver a comprehensive web application. This platform adeptly manages book-related functionalities, providing a seamlessly integrated shopping cart for an enhanced user experience.
-Result:
+**Result:**
 
 ![Controller](https://github.com/aniketsha/Books-Org-Project/assets/90695737/f7de2172-219d-439f-b5a7-4777add7e3a1)
 This is the `BookController` class which serves as a central component in the web application, managing various HTTP requests related to book operations and user authentication. Through the Spring MVC framework, it handles requests for the application's main page ("/"), secure sections ("/secure"), user login ("/login"), registration ("/register"), and permission-denied scenarios ("/permission-denied"). The controller interacts with a DatabaseAccess bean, employing methods for user registration, book insertion, deletion, and editing. It integrates role-based authorization to restrict certain functionalities to users with the "ADMIN" role. The corresponding Thymeleaf templates are employed to render the user interface for each endpoint, ensuring a seamless and secure user experience.
+
+
 ![image](https://github.com/aniketsha/Books-Org-Project/assets/90695737/aedb148b-fb35-4a87-be68-ade5928a7cea)
 This is the screen shot of security config file which is responsible for configuring the security settings of the web application using Spring Security. It defines access controls for various endpoints, integrating role-based authentication and permitting public access to specific resources. Notably, it handles CSRF protection, custom login pages, exception handling, and logout functionality. The class also establishes a BCryptPasswordEncoder bean for secure password encoding during user authentication, contributing to a robust and secure web environment.
 
+This is the login Page:
 ![image](https://github.com/aniketsha/Books-Org-Project/assets/90695737/2505d40f-12e1-490b-9c7b-734f014f3bf1)
+
+Now after login you see this:
 ![image](https://github.com/aniketsha/Books-Org-Project/assets/90695737/e398e9de-fa4c-42d9-a5d6-e80d03f0c888)
 ![image](https://github.com/aniketsha/Books-Org-Project/assets/90695737/39db687c-6b9e-485a-8a26-f695c7699a9e)
 
