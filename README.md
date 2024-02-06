@@ -1,5 +1,3 @@
-Certainly! Here's a more formal rendition:
-
 Objective:
 The primary objective of this project was the development of a sophisticated website utilizing the Java Spring Boot framework. The overarching aim was to proficiently organize, present, and retrieve information pertaining to books. Additionally, the platform was designed to function seamlessly as an integrated shopping cart, facilitating the streamlined purchase of items.
 
